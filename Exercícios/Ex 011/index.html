@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redimencionando imagens </title>
+</head>
+<body>
+    <h1>Imagens sendo Redimencionadas junto com a tela</h1>
+    <picture>
+        <source media="(max-width: 750px)" srcset="./imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="imagem Redimencionada">
+    </picture>
+    <h1>Audios em site</h1>
+    <audio src="midia/áudio-teste.m4a" preload="metadata" controls autoplay loop>
+    </audio>
+</body>
+</html>

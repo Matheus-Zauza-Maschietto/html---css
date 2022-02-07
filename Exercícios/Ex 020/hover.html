@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes com hover</title>
+    <style>
+        div{
+            display: ruby;
+            height: 300px;
+            width: 300px;
+            background-color: white;
+            border: 0.5px solid white;
+        }
+        div#primaria{
+            height: auto;
+            width: 100;
+
+        }
+        p{
+            display: none;
+            color: black;
+        }
+
+        div#primaria:hover > div > p{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <h1>Testes com hover</h1>
+    <div id="primaria">Passe o Mouse AQUI
+    <div>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis reiciendis non modi veritatis mollitia esse optio, laudantium officiis in aspernatur eum error necessitatibus similique aliquid fuga itaque quibusdam sit hic.
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Libero voluptatum beatae distinctio. Necessitatibus beatae doloremque, illum quibusdam corrupti quis neque sapiente aspernatur ullam distinctio perspiciatis expedita voluptate reiciendis non quidem!
+        </p>
+    </div>
+    <div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quaerat libero tempora repudiandae eius non doloremque eos at, molestias id ipsa illo autem deleniti exercitationem provident labore quae odio delectus in!
+        </p>
+    </div>
+</div>
+</body>
+</html>

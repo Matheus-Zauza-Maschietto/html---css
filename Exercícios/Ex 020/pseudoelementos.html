@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usando Pseudoelementos</title>
+    <style>
+        a{
+            color: rgb(32, 32, 1);
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: rgb(99, 99, 7);
+            content: "<=-=-=>";
+        }
+        a::after{
+            content: "<-";
+        }
+        a::before{
+            content: "->";
+        }
+    </style>
+</head>
+<body>
+    <h1>PseudoElemntos</h1>
+    <ol type="I">
+        <li><a href="https://www.youtube.com/" target="_blanck" rel="external">Youtube</a></li>
+        <li ><a href="https://www.facebook.com/" target="_blanck" rel="external">facebook</a></li>
+        <li><a href="https://www.instagram.com/" target="_blanck" rel="external">Instagram</a></li>
+    </ol>
+</body>
+</html>
