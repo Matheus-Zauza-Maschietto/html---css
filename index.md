@@ -9,7 +9,7 @@
 <body>
     <h1>Sites Criados Por Mim</h1>
     <ul type='square'>
-        <li><a href='https://matheus-zauza-maschietto.github.io/html---css/desafios/Site BugDroid/index.html'>Site BugDroid</a></li>
+        <li><a href='https://matheus-zauza-maschietto.github.io/html---css/desafios/Desafio 010 (Acompanhado)/index.html'>Site BugDroid</a></li>
     </ul>
 </body>
 </html>
