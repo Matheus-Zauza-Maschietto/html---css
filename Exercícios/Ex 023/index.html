@@ -5,11 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tabela</title>
+    <style>
+        body{
+            background-color: black;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        td{
+            border: 1px solid rgba(255, 0, 0, 0.301) ;
+            width: 15vw;
+            text-align: center;
+            min-height: 30vh;
+        }
+        tr#cabeçalho{
+            background-color: black;
+            color: white;
+        }
+        tr.dados{
+            color: chartreuse;
+        }
+        table{
+            border-collapse: collapse;
+        }
+    </style>
 </head>
 <body>
-    <h1>Minha primeira tabela</h1>
+    <h1 style="color: whitesmoke;">Minha primeira tabela</h1>
     <table>
-         
+            <tr id="cabeçalho">
+                <td>Paises</td>
+                <td>Siglas</td>
+                <td>Lingua</td>
+                <td>População</td>
+            </tr>
+            <tr class="dados">
+            <td>Brasil</td>
+            <td>BR</td>
+            <td>Portugues</td>
+            <td>210 Milhões</td>
+            </tr>
+            <tr class="dados">
+                <td>Portugal</td>
+                <td>PT</td>
+                <td>Portugues</td>
+                <td>10 milhões</td>
+            </tr>
+            <tr class="dados">
+                <td>Estados Unidos</td>
+                <td>USA</td>
+                <td>Inglês</td>
+                <td>300 milhões</td>
+            </tr>
     </table>
 </body>
 </html>
