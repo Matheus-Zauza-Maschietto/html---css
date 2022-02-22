@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notas Escola</title>
+    <style>
+        td{
+            border: 1px solid black;
+        }
+        th{
+            border: 1px solid black;
+        }
+        .superTitulo{
+            background-color: gray;
+            color: white;
+        }
+        table{
+            border-collapse: collapse;
+            width: 50vh;
+            height: 50vh;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th class="superTitulo" rowspan="2" scope="col" >Àrea</th>
+                <th class="superTitulo" rowspan="2" scope="col" >Discuplinas</th>
+                <th scope="colgroup" class="superTitulo" colspan="2">Notas</th>
+                <th scope="col" class="superTitulo" rowspan="2">Média</th>
+            </tr>
+            <tr>
+                <th scope="col" class="superTitulo" >Nota 1</th>
+                <th scope="col" class="superTitulo" >Nota 2</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="rowgroup" rowspan="4">Exatas</th>
+                <th scope="row" >Matemática</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" >Física</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" >Química</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" >Biologia</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" class="superTitulo" colspan="4">Média de Exatas</th>
+                <td class="superTitulo" >0.0</td>
+            </tr>
+            <tr>
+                <th scope="rowgroup" rowspan="2">Humanas</th>
+                <th scope="row">História</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row">Geografia</th>
+                <td>0.0</td>
+                <td>0.0</td>
+                <td>0.0</td>
+            </tr>
+            <tr>
+                <th scope="row" class="superTitulo" colspan="4">Média de Humanas</th>
+                <td class="superTitulo" >0.0</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
