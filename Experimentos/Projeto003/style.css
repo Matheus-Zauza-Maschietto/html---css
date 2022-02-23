@@ -6,25 +6,24 @@
     --fonte2: "Roboto Condensed";
     --cor1: #13361E;
     --cor2: #1a532c;
-    --cor4: #00b10093;
+    --cor3: #00b10093;
 }
-body{
-    background-color: #B4E395;
-    background-attachment: fixed;
+*{
     padding: 0px;
     margin: 0px;
+}
+
+body{
+    background-color: #BBFE8B;
+    background-attachment: fixed;
+    
     font-family: var(--fonte2), Arial, Helvetica, sans-serif;
 }
-header{
+
+
+ main, footer, header{
     padding: 0px 20px;
-    background-image: linear-gradient(to bottom, var(--cor1), rgb(0, 134, 18), var(--cor1));
-    max-width: 900px;
-    text-align: left;
-    margin: auto;
-}
- main, footer{
-    padding: 0px 20px;
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    background-color: var(--cor1);
     max-width: 900px;
     text-align: left;
     margin: auto;
@@ -40,8 +39,8 @@ nav > a{
     color: #1A532C;
     padding: 5px 2%;
     margin: 0px -3px;
-    
 }
+
 nav>a:hover{
     transition: 0.5s;
     transition-delay: 0.1s;
@@ -63,7 +62,6 @@ div#imgPrinc{
     border-radius: 2%;
     height: 420px;
     background-image: url(imagens/picture1.webp);
-
 }
 div#imgPrinc > div{
     font-size: 1.3em;
@@ -79,16 +77,16 @@ div#imgPrinc > div{
     color: white;
 }
 img#imagem{
-    width: 140px;
-
+    width: 180px;
 }
+
 div#imgPrinc p{
-    margin-top: 16px;
+    margin-top: 12px;
 }
 
-#divProcedencia{
-    margin-top: 20px;
-    background-image: url(imagens/picture4.webp);
+.backgroundDiv{
+    position: relative;
+    margin-top: 40px;
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -97,66 +95,43 @@ div#imgPrinc p{
     width: 400px;
 }
 
-#divProcedencia > p{
-    background-color: #13361e9f;
-    color: white;
-    top: 0px;
-    width: 40%;
-    margin: 10px;
-
+#div1{
+    background-image: url(imagens/picture4.webp);
 }
 
-article > p{
-    display: inline;
-}
-
-#divPreparo{
-    margin-top: 20px;
+#div2{
     background-image: url(imagens/picture5.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 2%;
-    height: 160px;
-    width: 260px;
-
 }
 
-#divPreparo > div > p{
-    position: absolute;
-    top: 96%;
-    left: 27%;
-    color: white;
-    background-color: #13361eb7;
-    padding: 10px;
-    border-bottom-right-radius: 30%;
-    border-top-left-radius: 30%;
-    font-size: 1.3em;
-}
-
-#divDistribuicao{
-    margin-top: 20px;
+#div3{
     background-image: url(imagens/picture3.webp);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    border-radius: 2%;
-    height: 160px;
-    width: 260px;
 }
 
-#divDistribuicao > div > p{
+.backgroundDiv > p{
     position: absolute;
-    top: 125%;
-    left: 27%;
+    top: 170px;
+    left: 20px;
+    background-color: rgba(4, 46, 4, 0.664);
     color: white;
-    background-color: #13361eb7;
     padding: 10px;
-    border-bottom-right-radius: 30%;
-    border-top-left-radius: 30%;
+    border-radius: 5%;
     font-size: 1.3em;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
 article{
-    display: inline;
+    max-width: 400px;
+    color: white;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    margin: 0px 10px;
+}
+
+footer{
 }
