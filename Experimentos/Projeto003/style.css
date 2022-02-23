@@ -9,19 +9,28 @@
     --cor4: #00b10093;
 }
 body{
-    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
+    background-color: #B4E395;
     background-attachment: fixed;
     padding: 0px;
     margin: 0px;
     font-family: var(--fonte2), Arial, Helvetica, sans-serif;
 }
-header, nav, main{
+header{
+    padding: 0px 20px;
+    background-image: linear-gradient(to bottom, var(--cor1), rgb(0, 134, 18), var(--cor1));
+    max-width: 900px;
+    text-align: left;
+    margin: auto;
+}
+ main, footer{
+    padding: 0px 20px;
+    background-image: linear-gradient(to bottom, var(--cor1), var(--cor4));
     max-width: 900px;
     text-align: left;
     margin: auto;
 }
 nav{
-    padding: 5px;
+    padding: 10px;
     margin-left: 5%;
     
 }
@@ -54,18 +63,18 @@ div#imgPrinc{
     border-radius: 2%;
     height: 420px;
     background-image: url(imagens/picture1.webp);
+
 }
 div#imgPrinc > div{
-    font-size: 1.2em;
-    height: 40px;
+    font-size: 1.3em;
+    height: 50px;
     width: 500px;
-    padding-top: -20px;
-    padding-bottom: 20px;
-
+    padding-bottom: 15px;
+    border-radius: 4%;
     background-color: #1a47286c;
     position: absolute;
-    left: 45%;
-    top: 87%;
+    left: 5%;
+    top: 85%;
     transform: translate(-5%, -30%);
     color: white;
 }
@@ -73,4 +82,81 @@ img#imagem{
     width: 140px;
 
 }
+div#imgPrinc p{
+    margin-top: 16px;
+}
 
+#divProcedencia{
+    margin-top: 20px;
+    background-image: url(imagens/picture4.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
+    height: 260px;
+    width: 400px;
+}
+
+#divProcedencia > p{
+    background-color: #13361e9f;
+    color: white;
+    top: 0px;
+    width: 40%;
+    margin: 10px;
+
+}
+
+article > p{
+    display: inline;
+}
+
+#divPreparo{
+    margin-top: 20px;
+    background-image: url(imagens/picture5.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
+    height: 160px;
+    width: 260px;
+
+}
+
+#divPreparo > div > p{
+    position: absolute;
+    top: 96%;
+    left: 27%;
+    color: white;
+    background-color: #13361eb7;
+    padding: 10px;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+    font-size: 1.3em;
+}
+
+#divDistribuicao{
+    margin-top: 20px;
+    background-image: url(imagens/picture3.webp);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 2%;
+    height: 160px;
+    width: 260px;
+}
+
+#divDistribuicao > div > p{
+    position: absolute;
+    top: 125%;
+    left: 27%;
+    color: white;
+    background-color: #13361eb7;
+    padding: 10px;
+    border-bottom-right-radius: 30%;
+    border-top-left-radius: 30%;
+    font-size: 1.3em;
+}
+
+article{
+    display: inline;
+}
