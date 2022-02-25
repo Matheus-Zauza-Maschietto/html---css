@@ -7,13 +7,105 @@
     <title>Inicio | VegAnnie</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        div#imgPrinc{
+            position: relative;
+            margin-top: 0px;
+            border-radius: 2%;
+            height: 420px;
+            background-image: url(imagens/picture1.webp);
+            box-shadow: 2px 2px 10px rgba(245, 255, 111, 0.3);
+        }
+        div#imgPrinc > div{
+            font-size: 1.3em;
+            height: 50px;
+            width: 443px;
+            padding-bottom: 15px;
+            border-radius: 4%;
+            background-color: #1a47286c;
+            position: absolute;
+            left: 5%;
+            top: 85%;
+            transform: translate(-5%, -30%);
+            color: white;
+        }
+        img#imagem{
+            max-width: 186px;
+            position: absolute;
+            top: 23%;
+            left: -3%;
+        }
+
+        div#imgPrinc p{
+            margin-top: 20px;
+            position: absolute;
+            left: 37%;
+            text-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
+        }
+
+        .backgroundDiv{
+            position: relative;
+            margin-top: 40px;
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border-radius: 2%;
+            height: 260px;
+            width: 400px;
+            box-shadow: 2px 2px 10px rgb(0 0 0 / 40%);
+        }
+
+        #div1{
+            background-image: url(imagens/picture4.webp);
+        }
+
+        #div2{
+            background-image: url(imagens/picture5.webp);
+        }
+
+        #div3{
+            background-image: url(imagens/picture3.webp);
+        }
+
+        .backgroundDiv > p{
+            position: absolute;
+            top: 191px;
+            left: 20px;
+            background-color: rgba(4, 46, 4, 0.664);
+            color: white;
+            padding: 10px;
+            border-radius: 5%;
+            font-size: 1.3em;
+        }
+
+        #container{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        article{
+            max-width: 400px;
+            color: white;
+            line-height: 1.5em;
+            font-size: 1.2em;
+            margin: 0px 10px;
+            padding-bottom: 20px;
+        }
+
+        article > p{
+            text-align: justify;
+            padding-top: 15px;
+        }
+    </style>
 </head>
 <body>
     <header>
         <a href="#"><img src="imagens/logoVeg.webp" alt="logoVegannie"></a>
         <nav>
-            <a href="#" id="primeiro">Início</a>
-            <a href="#">Quem Somos</a>
+            <a href="index.html" id="primeiro">Início</a>
+            <a href="sobreNos.html">Quem Somos</a>
             <a href="#">Consciência Alimentar</a>
             <a href="#">Cardápio</a>
             <a href="#">Pedidos</a>
