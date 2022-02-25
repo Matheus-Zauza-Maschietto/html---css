@@ -43,8 +43,7 @@
         }
         #imagem5{
             padding: 15px 0px;
-            max-width: 750px;
-            min-width: 440px
+            max-width: 700px;
         }
         .texto{
             color: white;
@@ -90,7 +89,7 @@
         <a href="index.html" target="author" rel="_self"><img src="imagens/logos/logoVeg.webp" alt="logoVegannie"></a>
         <nav>
             <a href="index.html" id="primeiro" target="author" rel="_self">Início</a>
-            <a href="sobreNos.html" target="author" rel="_self">Quem Somos</a>
+            <a href="sobreNos.html" target="author" rel="_self" style="background-color: #c5c5c5;">Quem Somos</a>
             <a href="conciencia.html" target="author" rel="_self">Consciência Alimentar</a>
             <a href="cardapio.html" target="author" rel="_self">Cardápio</a>
             <a href="pedidos.html" target="author" rel="_self">Pedidos</a>
@@ -183,7 +182,10 @@
                         Agradecer e preservar a vida.
                     </li>
                 </ul>
-                <img src="imagens/metas.webp" alt="metas" id="imagem5">
+                <picture>
+                    <source media="(max-width: 740px)" srcset="imagens/metasP.webp" type="image/webp">
+                    <img src="imagens/metas.webp" alt="metas" id="imagem5">
+                </picture>
             </article>
         </section>
         <section>

@@ -7,6 +7,44 @@
     <title>Cardápio | VegAnnie</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
+    <style>
+        p > img{
+            width: 120px;
+        }
+        p{
+            color: white;
+            width: 250px;
+            text-align: justify;
+            padding: 10px 0px;
+        }
+        #txtP{
+            width: 660px;
+        }
+        h1{
+            color: white;
+            text-align: left;
+            padding: 15px 0px;
+        }
+        h2{
+            padding: 10px 0px;
+            color: white;
+            text-align: center;  
+                
+        }
+        article{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        div > img{
+            width: 250px;
+            border-radius: 5%;
+            box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.253);
+        }
+
+    </style>
 </head>
 <body>
     <header>
@@ -15,76 +53,84 @@
             <a href="index.html" id="primeiro" target="author" rel="_self">Início</a>
             <a href="sobreNos.html" target="author" rel="_self">Quem Somos</a>
             <a href="conciencia.html" target="author" rel="_self">Consciência Alimentar</a>
-            <a href="cardapio.html" target="author" rel="_self">Cardápio</a>
-            <a href="pedidos.html" target="author" rel="_self">Pedidos</a>
+            <a href="cardapio.html" target="author" rel="_self" style="background-color: #c5c5c5;">Cardápio </a>
+            <a href="pedidos.html" target="author" rel="_self" >Pedidos</a>
             <a href="#" id="ultimo" target="author" rel="_self">Contatos</a> 
         </nav>
-        <main>
-            <section>
-                <h1>Cardápio</h1>
-                <hr>
-                <article>
-                    <img src="imagens/logos/logo100%Vegano.webp" alt="selo 100% vegano">
-                    <p>
-                        Todos os produtos da <img src="imagens/logos/logoVeg.webp" alt="logo VegAnnie">             são 100% livres de origem animal, naturais, orgânicos e saudáveis. Visando sempre priorizar a saúde do cliente e do planeta. Contando com linhas de alimentos doces e salgados saborosos proporcionando uma experiência gastronômica com diversos aromas, texturas e sabores, tudo isso livre de qualquer sofrimento animal.
-                    </p>
-                    <img src="imagens/bannerSalada.webp" alt="desenho de salada">
-                </article>
-            </section>
-            <section>
-                <h1>Doces</h1>
-                <hr>
-                <article>
-                    <div>
-                        <h2>Cookie</h2>
-                        <img src="imagens/comidas/cookie.webp" alt="cookies">
-                        <p>
-                            Os cookies são a especialidade da VegAnnie desde sua abertura! São feitos com cacau orgânico, leite de amêndoas, nozes e muito amor!
-                        </p>
-                    </div>
-                    <div>
-                        <h2>Geladinho</h2>
-                        <img src="imagens/comidas/geladinho.webp" alt="geladinhos">
-                        <p>
-                            Deliciosos geladinhos veganos feitos para te refrescar com produtos 100% naturais e livre de qualquer sofrimento animal!
-                        </p>
-                    </div>
-                    <div>
-                        <h2>Bliss Ball</h2>
-                        <img src="imagens/comidas/blissBall.webp" alt="BlissBall">
-                        <p>
-                            Bliss balls são uma ótima opção de snack para quem não tem tempo, ainda mais quando essa maravilha é feita de chocolate 70% com amendoim e coco!
-                        </p>
-                    </div>
-                   
-                </article>
-                 <article>
-                    <div>
-                        <h2>Pastel</h2>
-                        <hr>
-                        <p>
-                            Pastel recheado com creme de castanhas e couve, prato cheio de amor e livre de sofrimento animal!
-                        </p>
-                    </div>
-                    <div>
-                        <h2>Coxinha</h2>
-                        <hr>
-                        <p>
-                            Coxinha recheada com palmito cremoso e especiarias, saudável, saborosa e vegana!
-                        </p>
-                    </div>
-                    <div></div>
-                 </article>
-            </section>
-        </main>
-        <footer>
-            <p>©<img src="imagens/logos/logoVeg.webp" alt="">2021</p>
-            <div>
-                <a href="https://www.instagram.com/veganniefoods/?hl=pt-br" target="_blank" rel="external" ><img src="imagens/logos/instagramlogo.webp" alt="logo instagram"></a>
-                <a href="https://www.facebook.com/VegAnnieFoods" target="_blank" rel="external" ><img src="imagens/logos/facebooklogo.webp" alt="logo facebook"></a>
-                <a href="https://twitter.com/VegAnnieFoods" target="_blank" rel="external" ><img src="imagens/logos/twiterlogo.webp" alt="logo twiter"></a>
-            </div>
-        </footer>
     </header>
+    <main>
+        <section>
+            <h1>Cardápio</h1>
+            <hr>
+            <article>
+                <img src="imagens/logos/logo100%Vegano.webp" alt="selo 100% vegano">
+                <p id="txtP">
+                    Todos os produtos da <img src="imagens/logos/logoVeg.webp" alt="logo VegAnnie">             são 100% livres de origem animal, naturais, orgânicos e saudáveis. Visando sempre priorizar a saúde do cliente e do planeta. Contando com linhas de alimentos doces e salgados saborosos proporcionando uma experiência gastronômica com diversos aromas, texturas e sabores, tudo isso livre de qualquer sofrimento animal.
+                </p>
+            </article>
+        </section>
+        <section>
+            <h1>Doces</h1>
+            <hr>
+            <article>
+                <div>
+                    <h2>Cookie</h2>
+                    <img src="imagens/comidas/cookie.webp" alt="cookies">
+                    <p>
+                        Os cookies são a especialidade da VegAnnie desde sua abertura! São feitos com cacau orgânico, leite de amêndoas, nozes e muito amor!
+                    </p>
+                </div>
+                <div style="height: 452px;">
+                    <h2 >Geladinho</h2>
+                    <img src="imagens/comidas/geladinho.webp" alt="geladinhos">
+                    <p>
+                        Deliciosos geladinhos veganos feitos para te refrescar com produtos 100% naturais e livre de qualquer sofrimento animal!
+                    </p>
+                </div>
+                <div style="height: 452px;">
+                    <h2>Bliss Ball</h2>
+                    <img src="imagens/comidas/blissBall.webp" alt="BlissBall">
+                    <p>
+                        Bliss balls são uma ótima opção de snack para quem não tem tempo, ainda mais quando essa maravilha é feita de chocolate 70% com amendoim e coco!
+                    </p>
+                </div>
+                
+            </article>
+            <h1>Salgados</h1>
+                    <hr>
+                <article>
+                <div>
+                    <h2>Pastel</h2>
+                    <img src="imagens/comidas/pastel.webp" alt="pastel">
+                    <p>
+                        Pastel recheado com creme de castanhas e couve, prato cheio de amor e livre de sofrimento animal!
+                    </p>
+                </div>
+                <div style="height: 428px;">
+                    <h2 >Coxinha</h2>
+                    <img src="imagens/comidas/coxinha.webp" alt="coxinha">
+                    <p>
+                        Coxinha recheada com palmito cremoso e especiarias, saudável, saborosa e vegana!
+                    </p>
+                </div>
+                <div>
+                    <h2>Batata Frita</h2>
+                    <img src="imagens/comidas/batataFrita.webp" alt="Batata Frita">
+                    <p>
+                        Deliciosa porção de fritas livres de óleo com três molhos especiais como acompanhamento.
+                    </p>
+                </div>
+                </article>
+        </section>
+    </main>
+    <footer>
+        <p>©<img src="imagens/logos/logoVeg.webp" alt="">2022</p>
+        <div>
+            <a href="https://www.instagram.com/veganniefoods/?hl=pt-br" target="_blank" rel="external" ><img src="imagens/logos/instagramlogo.webp" alt="logo instagram"></a>
+            <a href="https://www.facebook.com/VegAnnieFoods" target="_blank" rel="external" ><img src="imagens/logos/facebooklogo.webp" alt="logo facebook"></a>
+            <a href="https://twitter.com/VegAnnieFoods" target="_blank" rel="external" ><img src="imagens/logos/twiterlogo.webp" alt="logo twiter"></a>
+        </div>
+    </footer>
+
 </body>
 </html>

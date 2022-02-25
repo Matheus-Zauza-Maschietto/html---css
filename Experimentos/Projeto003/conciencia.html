@@ -12,8 +12,8 @@
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            justify-content: center;
-            align-items: center;
+            justify-content: space-between;
+            align-items: flex-start;
         }
         p{
             color: white;
@@ -22,15 +22,15 @@
             width: 400px;
             padding: 15px 20px;
         }
-        article > img{
-            max-width: 80%;
+        picture > img{
+            max-width: 100%;
             padding-top: 20px;
         }
         #salada{
             opacity: 0.95;
         }
         #poluicao{
-            width: 50%;
+            max-width: 450px;
             margin: 0px 0px;
             padding: 0px 0px;
         }
@@ -38,7 +38,7 @@
             color: white;
             text-align: left;
             padding: 15px 0px;
-            font-size: 1.8em;
+            font-size: 1.4em;
             text-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
         }
         
@@ -50,7 +50,7 @@
         <nav>
             <a href="index.html" id="primeiro" target="author" rel="_self">Início</a>
             <a href="sobreNos.html" target="author" rel="_self">Quem Somos</a>
-            <a href="conciencia.html" target="author" rel="_self">Consciência Alimentar</a>
+            <a href="conciencia.html" target="author" rel="_self" style="background-color: #c5c5c5;">Consciência Alimentar</a>
             <a href="cardapio.html" target="author" rel="_self">Cardápio</a>
             <a href="pedidos.html" target="author" rel="_self">Pedidos</a>
             <a href="#" id="ultimo" target="author" rel="_self">Contatos</a> 
@@ -60,11 +60,11 @@
         <h1>Consciencia Alimentar</h1>
         <hr>
         <section>
-            <article>
-                <picture>
+            <picture>
                     <source media="(max-width: 800px)" srcset="imagens/bannerSaladaP.webp" type="image/webp">
                     <img src="imagens/bannerSalada.webp" alt="desenho de salada">
                 </picture>
+            <article>
                 <p>
                     Infelizmente, devido a falta de tempo e de conhecimento sobre nutrição, grande parte da população acaba consumindo em seu dia-a-dia produtos de origem animal, com diversos agrotóxicos, geneticamente modificados e com excesso de conservantes. E tal situação, se repetida durante um período ininterrupto, pode causar diversas consequências para a saúde daquele que possui tais hábitos, como falta de disposição, problemas cardíacos e até mesmo o desenvolvimento de intolerâncias alimentares, além dos males que tais alimentos e produtos causam para o meio-ambiente, visto que, além de haver grande exploração animal atrás da produção destes alimentos, eles também causam a liberação de mais de uma tonelada de CO2 na atmosfera anualmente, além de gerar grandes gastos com água, visto que em apenas um único dia, para realizar a produção de um (1) quilo de carne, gasta-se 16.000 litros de água.
                 </p>

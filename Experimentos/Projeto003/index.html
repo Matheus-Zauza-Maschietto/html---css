@@ -65,6 +65,7 @@
 
         #div3{
             background-image: url(imagens/picture3.webp);
+            max-width: 420px;
         }
 
         .backgroundDiv > p{
@@ -93,7 +94,12 @@
             margin: 0px 10px;
             padding-bottom: 20px;
         }
-
+        #transporte{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
         article > p{
             text-align: justify;
             padding-top: 15px;
@@ -104,7 +110,7 @@
     <header>
         <a href="index.html" target="author" rel="_self"><img src="imagens/logos/logoVeg.webp" alt="logoVegannie"></a>
         <nav>
-            <a href="index.html" id="primeiro" target="author" rel="_self">Início</a>
+            <a href="index.html" id="primeiro" target="author" rel="_self" style="background-color: #c5c5c5;">Início</a>
             <a href="sobreNos.html" target="author" rel="_self">Quem Somos</a>
             <a href="conciencia.html" target="author" rel="_self">Consciência Alimentar</a>
             <a href="cardapio.html" target="author" rel="_self">Cardápio</a>
@@ -116,7 +122,7 @@
         <section>
             <div id="imgPrinc">
                     <div>
-                        <img id="imagem" src="imagens/logoVeg.webp" alt="logo VegAnnie">
+                        <img id="imagem" src="imagens/logos/logoVeg.webp" alt="logo VegAnnie">
                         <p> Por um mundo mais verde!</p>
                     </div>
             </div>     
@@ -138,11 +144,11 @@
                         Todos os produtos encontrados para a venda na VegAnnie são feitos por especialistas em cozinha vegana, profissionais que transmitem muito amor e respeito aos ingredientes durante o preparo dos produtos, sempre priorizando o cuidado com a saúde do cliente e do planeta, os bens mais preciosos para a VegAnnie.
                     </p>
             </article>
-            <article>
-                <div id="div3" class="backgroundDiv">
+            <div id="div3" class="backgroundDiv">
                     <p>Distribuição</p>
                 </div>
-                    <p>
+            <article>
+                    <p style="padding-top: 30px;">
                         A VegAnnie é uma marca que realiza sua distribuição por toda a cidade de São Paulo,  sendo que nós realizamos todas as entregas por meio de bicicleta, ou seja, tentamos ao máximo emitir a menor quantidade possível de dióxido de carbono na atmosfera, para que consiga-se realizar sua contribuição para a saúde do meio ambiente.
                     </p>
             </article>

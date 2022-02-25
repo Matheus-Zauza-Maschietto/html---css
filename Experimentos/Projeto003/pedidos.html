@@ -35,6 +35,7 @@
         }
         #bike{
             width: 94%;
+            padding: 15px 0px;
         }
     </style>
 </head>
@@ -46,7 +47,7 @@
             <a href="sobreNos.html" target="author" rel="_self">Quem Somos</a>
             <a href="conciencia.html" target="author" rel="_self">Consciência Alimentar</a>
             <a href="cardapio.html" target="author" rel="_self">Cardápio</a>
-            <a href="pedidos.html" target="author" rel="_self">Pedidos</a>
+            <a href="pedidos.html" target="author" rel="_self" style="background-color: #c5c5c5;">Pedidos</a>
             <a href="#" id="ultimo" target="author" rel="_self">Contatos</a> 
     </header>
     <main>
@@ -65,7 +66,11 @@
                 <p style="width: auto;">
                     A zona de cobertura da <img src="imagens/logos/logoVeg.webp" alt="logo ">     abrange Ferraz de Vasconcelos, Poá, Suzano, Itaim Paulista e regiões próximas. As entregas num raio de até 10 Km de nossa sede são feitas utilizando bicicletas evitando a emissão de gás carbônico na atmosfera e reforçando nosso compromisso com o meio ambiente, alicerce sobre o qual nossa empresa se ergue.
                 </p>
-                <img src="imagens/bannerBike.webp" alt="pessoa de bicicleta" id="bike">
+                <picture>
+                    <source media="(max-width: 800px)" srcset="imagens/bannerBikeP.webp" type="image/webp">
+                    <img src="imagens/bannerBike.webp" alt="pessoa de bicicleta" id="bike">
+                </picture>
+                
             </article>
         </section>
         <section>
