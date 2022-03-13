@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,7 +9,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="imagens/favicon.ico" type="image/x-icon">
     <style>
-        div#imgPrinc{
+        div#imgPrinc {
             position: relative;
             margin-top: 0px;
             border-radius: 2%;
@@ -16,7 +17,8 @@
             background-image: url(imagens/picture1.webp);
             box-shadow: 2px 2px 10px rgba(245, 255, 111, 0.3);
         }
-        div#imgPrinc > div{
+
+        div#imgPrinc>div {
             font-size: 1.3em;
             height: 50px;
             width: 443px;
@@ -29,21 +31,22 @@
             transform: translate(-5%, -30%);
             color: white;
         }
-        img#imagem{
+
+        img#imagem {
             max-width: 186px;
             position: absolute;
             top: 23%;
             left: -3%;
         }
 
-        div#imgPrinc p{
+        div#imgPrinc p {
             margin-top: 20px;
             position: absolute;
             left: 37%;
             text-shadow: 2px 2px 3px rgb(0 0 0 / 50%);
         }
 
-        .backgroundDiv{
+        .backgroundDiv {
             position: relative;
             margin-top: 40px;
             background-position: center center;
@@ -55,20 +58,20 @@
             box-shadow: 2px 2px 10px rgb(0 0 0 / 40%);
         }
 
-        #div1{
+        #div1 {
             background-image: url(imagens/picture4.webp);
         }
 
-        #div2{
+        #div2 {
             background-image: url(imagens/picture5.webp);
         }
 
-        #div3{
+        #div3 {
             background-image: url(imagens/picture3.webp);
             max-width: 420px;
         }
 
-        .backgroundDiv > p{
+        .backgroundDiv>p {
             position: absolute;
             top: 191px;
             left: 20px;
@@ -79,14 +82,14 @@
             font-size: 1.3em;
         }
 
-        #container{
+        #container {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: space-around;
         }
 
-        article{
+        article {
             max-width: 400px;
             color: white;
             line-height: 1.5em;
@@ -94,73 +97,89 @@
             margin: 0px 10px;
             padding-bottom: 20px;
         }
-        #transporte{
+
+        #transporte {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
             justify-content: center;
         }
-        article > p{
+
+        article>p {
             text-align: justify;
             padding-top: 15px;
         }
     </style>
 </head>
+
 <body>
     <header>
         <a href="index.html" rel="_self"><img src="imagens/logos/logoVeg.webp" alt="logoVegannie"></a>
         <nav>
-            <a href="index.html" id="primeiro"  rel="_self" style="background-color: #c5c5c5;">Início</a>
+            <a href="index.html" id="primeiro" rel="_self" style="background-color: #c5c5c5;">Início</a>
             <a href="sobreNos.html" rel="_self">Quem Somos</a>
             <a href="conciencia.html" rel="_self">Consciência Alimentar</a>
             <a href="cardapio.html" rel="_self">Cardápio</a>
             <a href="pedidos.html" rel="_self">Pedidos</a>
-            <a href="#" id="ultimo" rel="_self">Contatos</a> 
+            <a href="contato.html" id="ultimo" rel="_self">Contatos</a>
         </nav>
     </header>
     <main>
         <section>
             <div id="imgPrinc">
-                    <div>
-                        <img id="imagem" src="imagens/logos/logoVeg.webp" alt="logo VegAnnie">
-                        <p> Por um mundo mais verde!</p>
-                    </div>
-            </div>     
+                <div>
+                    <img id="imagem" src="imagens/logos/logoVeg.webp" alt="logo VegAnnie">
+                    <p> Por um mundo mais verde!</p>
+                </div>
+            </div>
         </section>
         <section id="container">
             <article>
                 <div id="div1" class="backgroundDiv">
-                        <p>Procedência</p>
+                    <p>Procedência</p>
                 </div>
-                    <P>
-                        Os produtos que são utilizados como matéria-prima para a produção dos pratos na VegAnnie são cultivados por pequenos produtores de maneira especial, livres de agrotóxicos e sem modificar as características reais do solo. Todos os ingredientes são adquiridos de produtores ou distribuidores orgânicos certificados
-                    </P>
+                <P>
+                    Os produtos que são utilizados como matéria-prima para a produção dos pratos na VegAnnie são
+                    cultivados por pequenos produtores de maneira especial, livres de agrotóxicos e sem modificar as
+                    características reais do solo. Todos os ingredientes são adquiridos de produtores ou distribuidores
+                    orgânicos certificados
+                </P>
             </article>
             <article>
                 <div id="div2" class="backgroundDiv">
                     <p>Preparo</p>
                 </div>
-                    <p>
-                        Todos os produtos encontrados para a venda na VegAnnie são feitos por especialistas em cozinha vegana, profissionais que transmitem muito amor e respeito aos ingredientes durante o preparo dos produtos, sempre priorizando o cuidado com a saúde do cliente e do planeta, os bens mais preciosos para a VegAnnie.
-                    </p>
+                <p>
+                    Todos os produtos encontrados para a venda na VegAnnie são feitos por especialistas em cozinha
+                    vegana, profissionais que transmitem muito amor e respeito aos ingredientes durante o preparo dos
+                    produtos, sempre priorizando o cuidado com a saúde do cliente e do planeta, os bens mais preciosos
+                    para a VegAnnie.
+                </p>
             </article>
             <div id="div3" class="backgroundDiv">
-                    <p>Distribuição</p>
-                </div>
+                <p>Distribuição</p>
+            </div>
             <article>
-                    <p style="padding-top: 30px;">
-                        A VegAnnie é uma marca que realiza sua distribuição por toda a cidade de São Paulo,  sendo que nós realizamos todas as entregas por meio de bicicleta, ou seja, tentamos ao máximo emitir a menor quantidade possível de dióxido de carbono na atmosfera, para que consiga-se realizar sua contribuição para a saúde do meio ambiente.
-                    </p>
+                <p style="padding-top: 30px;">
+                    A VegAnnie é uma marca que realiza sua distribuição por toda a cidade de São Paulo, sendo que nós
+                    realizamos todas as entregas por meio de bicicleta, ou seja, tentamos ao máximo emitir a menor
+                    quantidade possível de dióxido de carbono na atmosfera, para que consiga-se realizar sua
+                    contribuição para a saúde do meio ambiente.
+                </p>
             </article>
         </section>
     </main>
     <footer>
         <p>©<img src="imagens/logos/logoVeg.webp" alt="">2021</p>
         <div>
-            <a href="https://www.instagram.com/veganniefoods/?hl=pt-br" target="_blank" rel="external" ><img src="imagens/logos/instagramlogo.webp" alt="logo instagram"></a>
-            <a href="https://www.facebook.com/VegAnnieFoods" target="_blank" rel="external" ><img src="imagens/logos/facebooklogo.webp" alt="logo facebook"></a>
-            <a href="https://twitter.com/VegAnnieFoods" target="_blank" rel="external" ><img src="imagens/logos/twiterlogo.webp" alt="logo twiter"></a>
+            <a href="https://www.instagram.com/veganniefoods/?hl=pt-br" target="_blank" rel="external"><img
+                    src="imagens/logos/instagramlogo.webp" alt="logo instagram"></a>
+            <a href="https://www.facebook.com/VegAnnieFoods" target="_blank" rel="external"><img
+                    src="imagens/logos/facebooklogo.webp" alt="logo facebook"></a>
+            <a href="https://twitter.com/VegAnnieFoods" target="_blank" rel="external"><img
+                    src="imagens/logos/twiterlogo.webp" alt="logo twiter"></a>
         </div>
     </footer>
 </body>
+
 </html>
