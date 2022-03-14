@@ -9,7 +9,80 @@
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
     <style>
+        #email {
+            list-style-image: url(imagens/logos/emailIcon.png);
+        }
 
+        #fone {
+            list-style-image: url(imagens/logos/telefoneIcon.png);
+        }
+
+        #endereco {
+            list-style-image: url(imagens/logos/enderecoIcon.png);
+            padding-bottom: 20px;
+        }
+
+        li {
+            list-style-position: inside;
+        }
+
+        main {
+            text-align: left;
+            color: #ffffff;
+        }
+
+        fieldset {
+            border: 0px solid white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: baseline;
+        }
+
+        h2 {
+            padding: 20px 0px 10px 0px;
+        }
+
+        form>h2 {
+            padding: 15px 0px 15px 5px;
+        }
+
+        h3 {
+            padding: 20px 0px 5px 0px;
+        }
+
+        section {
+            padding: 5px 20px;
+        }
+
+        fieldset {
+            margin-top: -15px;
+            padding-bottom: 20px;
+        }
+
+        .dadosP>input {
+            margin-bottom: 10px;
+        }
+
+        input:hover {
+            box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.295);
+        }
+
+        li {
+            padding: 0px 0px 2px 0px;
+        }
+
+        input {
+            border-radius: -1px;
+        }
+
+        #confirma {
+            padding: 3px 5px;
+            transform: translate(20px, -5px);
+            background-color: var(--cor3);
+            color: white;
+        }
     </style>
 </head>
 
@@ -30,23 +103,55 @@
             <article>
                 <h2>Nossos Contatos</h2>
                 <ul>
-                    <li>Email: vegAnnie@gmail.com</li>
-                    <li>Telefone: 0000-0000</li>
-                    <li>Endereço da sede: SP/SP bairro Só Deus na Causa rua Ave Maria numero 666</li>
+                    <li id="email">Email: vegAnnie@gmail.com</li>
+                    <li id="fone">Telefone: +55 11 00000-0000</li>
+                    <li id="endereco">Endereço da sede: SP/SP bairro Só Deus na Causa, rua Ave Maria numero 666</li>
                 </ul>
+                <hr>
                 <form action="#" target="_self" method="get">
+                    <h2>Cadastro</h2>
                     <fieldset>
-                        <legend>Cadastro</legend>
-                        <section>
-                            <input type="text" id="Nome" placeholder="Nome Completo" maxlength="30" required>
+                        <section class="dadosP">
+                            <label for="nome">
+                                Nome
+                            </label>
                             <br>
-
-                            <label for="DataNascimento">Data de Nascimento</label>
+                            <input type="text" id="nome" placeholder="Nome Completo" maxlength="30" required>
+                            <br>
+                            <label for="DataNascimento">
+                                Data de Nascimento
+                            </label>
                             <br>
                             <input type="date" name="Nascimento" id="DataNascimento" required>
+                            <br>
+                            <label for="email">E-Mail</label>
+                            <br>
+                            <input type="email" id="email" name="email" placeholder="E-Mail" required>
+                            <br>
+
                         </section>
 
-                        <section>
+                        <section class="dadosP">
+                            <label for="usuario">Nome de Usuario</label>
+                            <br>
+                            <input type="text" name="usuario" id="usuario" placeholder="Nome de Usuario" required>
+                            <br>
+                            <label for="senha">
+                                Senha
+                            </label>
+                            <br>
+                            <input type="password" name="senha" id="senha" placeholder="Digite uma senha" maxlength="30"
+                                required>
+                            <br>
+                            <label for="senhaDNV">
+                                Confirme a Senha
+                            </label>
+                            <br>
+                            <input type="password" name="senha" id="senhaDNV" placeholder="Digite novamente sua senha"
+                                maxlength="30" required>
+                        </section>
+
+                        <section id="dieta">
                             <h3>Qual seu tipo de dieta</h3>
 
                             <input type="radio" id="vegana" name="dieta" value="vegana">
@@ -96,10 +201,9 @@
                             </label>
                             <br>
                         </section>
-                        <input type="password" name="senha" id="senha" placeholder="Digite uma senha" maxlength="20"
-                            required>
+
                     </fieldset>
-                    <input type="submit" value="submit">
+                    <input type="submit" value="Confirmar" id="confirma">
                 </form>
             </article>
         </section>
