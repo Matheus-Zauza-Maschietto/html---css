@@ -1,58 +1,136 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>testes</title>
+    <title>Teste de aba</title>
     <style>
-        div {
-            box-sizing: border-box;
-            background-color: royalblue;
-            width: 25%;
-            height: 100px;
-
-            margin: 5px;
-            float: left;
+        * {
+            padding: 0;
+            margin: 0;
         }
 
-        @media screen and (max-width:700px) {
-            div {
-                width: 33.33%;
-            }
+        html {
+            scroll-behavior: smooth;
+        }
+
+        fieldset {
+            position: fixed;
+        }
+
+        #cabecalho {
+            position: absolute;
+            height: 100px;
+            width: 100px;
+            background-color: black;
+            padding-left: 20px;
+            padding-top: 20px;
+            left: -200px;
+        }
+
+        #checkbox {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            left: 5px;
+            top: 5px;
+        }
+
+        #checkbox:not(:checked)+div {
+            transform: translateX(-200px);
+            transition-duration: 0.5s;
+        }
+
+        #checkbox:checked {
+            transform: translateX(120px);
+            transition-duration: 0.5s;
+        }
+
+        #checkbox:not(:checked) {
+            transition-duration: 0.5s;
+        }
+
+        #checkbox:checked+div {
+            transform: translateX(200px);
+            transition-duration: 0.5s;
+        }
+
+        fieldset a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            font-weight: bolder;
+        }
+
+        div {
+            width: 99vw;
+            height: 100vh;
+        }
+
+        #inicio {
+            background-color: cadetblue;
+        }
+
+        #fim {
+            background-color: antiquewhite;
+        }
+
+        #meio {
+            background-color: azure;
         }
     </style>
 </head>
 
 <body>
-    <div>
 
-    </div>
-    <div>
+    <head>
+        <nav>
+            <form action="">
+                <fieldset>
 
-    </div>
-    <div>
+                    <input type="checkbox" name="checkbox" id="checkbox">
 
-    </div>
-    <div>
 
-    </div>
-    <div>
+                    <div id="cabecalho">
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#meio">Meio</a></li>
+                            <li><a href="#fim">Fim</a></li>
+                        </ul>
+                    </div>
 
-    </div>
-    <div>
+                </fieldset>
 
-    </div>
-    <div>
-
-    </div>
-    <div>
-
-    </div>
-    <div>
-
-    </div>
+            </form>
+        </nav>
+    </head>
+    <main>
+        <div id="inicio">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed sapiente, praesentium autem quis
+                consequuntur voluptatum quae perspiciatis laboriosam quia! Ipsum reprehenderit nulla ab modi harum,
+                dolore iure laboriosam eos nihil.
+            </p>
+        </div>
+        <div id="meio">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste eaque quisquam debitis repudiandae fuga
+                laudantium non dolor! Quidem repudiandae recusandae, asperiores, aut hic odit repellat non cumque unde
+                cum reiciendis?
+            </p>
+        </div>
+        <div id="fim">
+            <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Error doloribus animi blanditiis obcaecati.
+                Eaque consequatur nisi harum nemo vero, culpa esse dolores blanditiis commodi delectus enim placeat
+                deleniti id doloribus?
+            </p>
+        </div>
+    </main>
 </body>
 
 </html>
