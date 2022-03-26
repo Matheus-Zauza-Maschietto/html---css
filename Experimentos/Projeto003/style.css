@@ -90,37 +90,32 @@ footer > div{
 }
 
 @media (max-width: 760px) {
-    #menu:checked{
+    #checkbox:checked+#links{
+        
+    }
+    #checkbox:checked{
+        
+    }
+    #checkbox{
 
     }
-    nav>div{
-        position: absolute;
-        left: 20px;
-    }
-    #menu{
-        position: absolute;
-        width: 30px;
-        height: 30px;
-        left: 10px;
-        top: 20px;
-    }
-    #menuLinks{
+    #links{
         display: flex;
         flex-direction: column;
+        top: 10px;
     }
-    a{
-
+    #links>a{
+        height: 20vh; 
+        
+    }
+    #links>a:hover{
+        
     }
     nav{
-        position: fixed;
-        z-index: 1;
-        padding: 0px;
-        height: 100vh;
-        width: 15vw;
-        background-color: white;
+        
     }
     a#primeiro, a#ultimo{
-        border-radius: 0%;
+        border-radius: 5% 5% 0 0;
     }
 
 }
