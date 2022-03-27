@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato | VegAnnie</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./imagens/favicon.ico" type="image/x-icon">
+    <style>
+        #email {
+            list-style-image: url(imagens/logos/emailIcon.png);
+        }
+
+        #fone {
+            list-style-image: url(imagens/logos/telefoneIcon.png);
+        }
+
+        #endereco {
+            list-style-image: url(imagens/logos/enderecoIcon.png);
+            padding-bottom: 20px;
+        }
+
+        li {
+            list-style-position: inside;
+        }
+
+        main {
+            text-align: left;
+            color: #ffffff;
+        }
+
+        fieldset {
+            border: 0px solid white;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: flex-start;
+            align-items: baseline;
+        }
+
+        h2 {
+            padding: 20px 0px 10px 0px;
+        }
+
+        form>h2 {
+            padding: 15px 0px 15px 5px;
+        }
+
+        h3 {
+            padding: 20px 0px 5px 0px;
+        }
+
+        section {
+            padding: 5px 20px;
+        }
+
+        fieldset {
+            margin-top: -15px;
+            padding-bottom: 20px;
+        }
+
+        .dadosP>input {
+            margin-bottom: 10px;
+        }
+
+        input:hover {
+            box-shadow: 0px 0px 10px 3px rgba(255, 255, 255, 0.295);
+        }
+
+        li {
+            padding: 0px 0px 2px 0px;
+        }
+
+        input {
+            border-radius: -1px;
+        }
+
+        #confirma {
+            padding: 3px 5px;
+            transform: translate(20px, -5px);
+            background-color: var(--cor3);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" name="checkbox" id="checkbox">
+            <ul>
+
+                <li><a href="index.html" rel="_self"><img src="imagens/logos/logoVeg.webp" alt="logoVegannie"
+                            id="logoPrincipal"></a></li>
+                <li><a href="index.html" id="primeiro" rel="_self">Início</a></li>
+                <li><a href="sobreNos.html" rel="_self">Quem Somos</a></li>
+                <li><a href="conciencia.html" rel="_self">Consciência Alimentar</a></li>
+                <li><a href="cardapio.html" rel="_self">Cardápio</a></li>
+                <li><a href="pedidos.html" rel="_self">Pedidos</a></li>
+                <li><a href="contato.html" id="ultimo" rel="_self">Contatos</a></li>
+                <li id="redeSocial"><a href="https://www.instagram.com/veganniefoods/?hl=pt-br" target="_blank"
+                        rel="external"><img src="imagens/logos/instagramlogo.webp" alt="logo instagram"></a>
+                    <a href="https://www.facebook.com/VegAnnieFoods" target="_blank" rel="external"><img
+                            src="imagens/logos/facebooklogo.webp" alt="logo facebook"></a>
+                    <a href="https://twitter.com/VegAnnieFoods" target="_blank" rel="external"><img
+                            src="imagens/logos/twiterlogo.webp" alt="logo twiter"></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <article>
+                <h2>Nossos Contatos</h2>
+                <ul>
+                    <li id="email">Email: vegAnnie@gmail.com</li>
+                    <li id="fone">Telefone: +55 11 00000-0000</li>
+                    <li id="endereco">Endereço da sede: SP/SP bairro Só Deus na Causa, rua Ave Maria numero 666</li>
+                </ul>
+                <hr>
+                <form action="#" target="_self" method="get">
+                    <h2>Cadastro</h2>
+                    <fieldset>
+                        <section class="dadosP">
+                            <label for="nome">
+                                Nome
+                            </label>
+                            <br>
+                            <input type="text" id="nome" placeholder="Nome Completo" maxlength="30" required>
+                            <br>
+                            <label for="DataNascimento">
+                                Data de Nascimento
+                            </label>
+                            <br>
+                            <input type="date" name="Nascimento" id="DataNascimento" required>
+                            <br>
+                            <label for="email">E-Mail</label>
+                            <br>
+                            <input type="email" id="email" name="email" placeholder="E-Mail" required>
+                            <br>
+
+                        </section>
+
+                        <section class="dadosP">
+                            <label for="usuario">Nome de Usuario</label>
+                            <br>
+                            <input type="text" name="usuario" id="usuario" placeholder="Nome de Usuario" required>
+                            <br>
+                            <label for="senha">
+                                Senha
+                            </label>
+                            <br>
+                            <input type="password" name="senha" id="senha" placeholder="Digite uma senha" maxlength="30"
+                                required>
+                            <br>
+                            <label for="senhaDNV">
+                                Confirme a Senha
+                            </label>
+                            <br>
+                            <input type="password" name="senha" id="senhaDNV" placeholder="Digite novamente sua senha"
+                                maxlength="30" required>
+                        </section>
+
+                        <section id="dieta">
+                            <h3>Qual seu tipo de dieta</h3>
+
+                            <input type="radio" id="vegana" name="dieta" value="vegana">
+                            <label for="vegana" title="Não Possui nenhum alimento de origem animal em sua dieta.">
+                                Vegana
+                            </label>
+                            <br>
+
+                            <input type="radio" id="vegetariana" name="dieta" value="vegetariana">
+                            <label for="vegetariana"
+                                title="Possui todos alimentos de origem animal em sua dieta, exceto a carne.">
+                                Vegetariana
+                            </label>
+                            <br>
+
+                            <input type="radio" id="vegetarianaEs" name="dieta" value="vegetarianaEs">
+                            <label for="vegetarianaEs"
+                                title="Não possui nenhum alimento de origem animal em sua dieta, porem diferente do vegano aceita produtos não alimenticios de origem animal">
+                                Vegetariana Estrita
+                            </label>
+                            <br>
+
+                            <input type="radio" id="ovolactovegetariana" name="dieta" value="ovolactovegetariana">
+                            <label for="ovolactovegetariana"
+                                title="Não possui nenhum alimento de origem animal em sua dieta EXCETO ovos e laticinios">
+                                Ovolactovegetariana
+                            </label>
+                            <br>
+
+                            <input type="radio" id="lactovegetariana" name="dieta" value="lactovegetariana">
+                            <label for="lactovegetariana"
+                                title="Não possui nenhum alimento de origem animal em sua dieta EXCETO laticinios">
+                                Lactovegetariana
+                            </label>
+                            <br>
+
+                            <input type="radio" id="ovovegetariana" name="dieta" value="ovovegetariana">
+                            <label for="ovovegetariana"
+                                title="Não possui nenhum alimento de origem animal em sua dieta EXCETO ovos">
+                                Ovovegetariana
+                            </label>
+                            <br>
+
+                            <input type="radio" id="onivora" name="dieta" value="">
+                            <label for="onivora" title="Possui dieta sem restrinção de alimentação">
+                                Onivora
+                            </label>
+                            <br>
+                        </section>
+
+                    </fieldset>
+                    <input type="submit" value="Confirmar" id="confirma">
+                </form>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>©<img src="imagens/logos/logoVeg.webp" alt="">2022</p>
+    </footer>
+</body>
+
+</html>
