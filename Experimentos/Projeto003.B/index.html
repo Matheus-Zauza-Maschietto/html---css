@@ -63,6 +63,7 @@
                 background-size: cover;
                 margin-bottom: 0;
                 background-position: center center;
+                transition-duration: 0.1s;
             }
 
             .conteudo>h2>input:checked {
@@ -71,24 +72,22 @@
             }
 
             .conteudo>div {
-                height: 50%;
                 width: 100%;
                 overflow: hidden;
             }
 
             #checkProcede:checked+div {
-                overflow: initial;
-                height: 100%;
+                height: 200px;
             }
 
             #checkPrepara:checked+div {
-                overflow: initial;
-                height: 100%;
+
+                height: max-content;
             }
 
             #checkDistribui:checked+div {
-                overflow: initial;
-                height: 100%;
+
+                height: max-content;
             }
         }
     </style>
