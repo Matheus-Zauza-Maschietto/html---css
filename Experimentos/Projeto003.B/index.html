@@ -28,6 +28,7 @@
                 height: 30vh;
                 margin: auto;
                 border-radius: 3%;
+                box-shadow: 2px 2px 4px rgba(255, 238, 0, 0.150);
             }
 
             #imagem1 img {
@@ -43,6 +44,7 @@
 
             .conteudo>h2 {
                 color: var(--cor3);
+                display: inline;
             }
 
             #logo {
@@ -66,29 +68,21 @@
                 transition-duration: 0.1s;
             }
 
-            .conteudo>h2>input:checked {
+            .conteudo input:checked {
                 transform: rotateZ(90deg);
                 transition-duration: 0.1s;
             }
 
             .conteudo>div {
-                width: 100%;
+                height: 0;
                 overflow: hidden;
             }
 
-            #checkProcede:checked+div {
-                height: 200px;
+            .checkbox:checked+div {
+                height: min-content;
             }
 
-            #checkPrepara:checked+div {
 
-                height: max-content;
-            }
-
-            #checkDistribui:checked+div {
-
-                height: max-content;
-            }
         }
     </style>
 </head>
@@ -125,9 +119,21 @@
             </div>
         </section>
         <section>
-            <article class="conteudo" id="procedencia">
-                <h2>Procedência <input type="checkbox" name="checkboxProcede" id="checkProcede" class="checkbox"></h2>
+            <article class="conteudo">
+                <h2>Sobre Nós</h2>
+                <p>
+                    A VegAnnie é um webcommerce que tem como objetivo atender a necessidade e auxiliar na praticidade da
+                    demanda de produtos que atendem a opções de dieta veganas, vegetarias e seus subconjuntos. Nossa
+                    meta é que desse modo possamos desmistificar as lendas e que rodeiam esse tipo de alimentação e
+                    torna-la mais agradavel a seus adeptos.
+                    VegAnnie, por um mundo mais verde
+                </p>
 
+            </article>
+
+            <article class="conteudo" id="procedencia">
+                <h2>Procedência </h2>
+                <input type="checkbox" name="checkboxProcede" id="checkProcede" class="checkbox">
                 <div>
                     <P>
                         Os produtos que são utilizados como matéria-prima para a produção dos pratos na VegAnnie são
@@ -139,7 +145,8 @@
                 </div>
             </article>
             <article class="conteudo" id="preparo">
-                <h2>Preparação <input type="checkbox" name="checkboxPrepara" id="checkPrepara" class="checkbox"></h2>
+                <h2>Preparação </h2>
+                <input type="checkbox" name="checkboxPrepara" id="checkPrepara" class="checkbox">
                 <div>
                     <P>
                         Os produtos que são utilizados como matéria-prima para a produção dos pratos na VegAnnie são
@@ -151,8 +158,8 @@
                 </div>
             </article>
             <article class="conteudo" id="distribui">
-                <h2>Distribuição <input type="checkbox" name="checkboxDistribui" id="CheckDistribui" class="checkbox">
-                </h2>
+                <h2>Distribuição </h2>
+                <input type="checkbox" name="checkboxDistribui" id="CheckDistribui" class="checkbox">
                 <div>
                     <p>
                         A VegAnnie é uma marca que realiza sua distribuição por toda a cidade de São Paulo, sendo que
