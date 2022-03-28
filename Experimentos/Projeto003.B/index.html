@@ -62,8 +62,8 @@
 
             .checkbox {
                 all: unset;
-                height: 20px;
-                width: 20px;
+                height: 12px;
+                width: 12px;
                 background-image: url(imagens/logos/seta.png);
                 display: inline-block;
                 background-size: cover;
@@ -83,7 +83,12 @@
             }
 
             .checkbox:checked+div {
-                height: min-content;
+                height: 100%;
+            }
+
+            .checkbox:checked+div>img {
+                padding: 0 15%;
+                border-radius: 4%;
             }
 
 
@@ -139,6 +144,7 @@
                 <h2>Procedência </h2>
                 <input type="checkbox" name="checkboxProcede" id="checkProcede" class="checkbox">
                 <div>
+                    <img src="imagens/picture4.webp" alt="batatas sendo colhidas">
                     <P>
                         Os produtos que são utilizados como matéria-prima para a produção dos pratos na VegAnnie são
                         cultivados por pequenos produtores de maneira especial, livres de agrotóxicos e sem modificar as
@@ -152,6 +158,7 @@
                 <h2>Preparação </h2>
                 <input type="checkbox" name="checkboxPrepara" id="checkPrepara" class="checkbox">
                 <div>
+                    <img src="imagens/picture5.webp" alt="recipiente chio de tomates">
                     <P>
                         Os produtos que são utilizados como matéria-prima para a produção dos pratos na VegAnnie são
                         cultivados por pequenos produtores de maneira especial, livres de agrotóxicos e sem modificar as
@@ -165,6 +172,7 @@
                 <h2>Distribuição </h2>
                 <input type="checkbox" name="checkboxDistribui" id="CheckDistribui" class="checkbox">
                 <div>
+                    <img src="imagens/picture3.webp" alt="homem andando de bicicleta">
                     <p>
                         A VegAnnie é uma marca que realiza sua distribuição por toda a cidade de São Paulo, sendo que
                         nós
