@@ -12,6 +12,7 @@
         <li><a href='https://matheus-zauza-maschietto.github.io/html---css/desafios/Desafio 010 (Acompanhado)/index.html'>Site BugDroid</a></li>
         <li><a href='https://matheus-zauza-maschietto.github.io/html---css/desafios/Desafio Cordel/index.html'>Site Poemo do Cordel</a></li>
         <li><a href='https://matheus-zauza-maschietto.github.io/html---css/Experimentos/Projeto003/index.html'>Site VegAnnie</a></li>
+        <li><a href='https://matheus-zauza-maschietto.github.io/html---css/Experimentos/Projeto003.B/index.html'>Site VegAnnie B</a></li>
     </ul>
 </body>
 </html>
