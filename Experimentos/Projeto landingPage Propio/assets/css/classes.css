@@ -1,0 +1,19 @@
+.main-bg{
+    background-image: url('../img/backgroundIMG.svg');
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.main-content{
+    max-width: 120rem;
+    margin: 0 auto;
+}
+
+.section{
+    min-height: 100vh;
+}
+
+.menu-spacing{
+    height: 6.5rem;
+}
