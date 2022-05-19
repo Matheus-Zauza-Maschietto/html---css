@@ -5,6 +5,11 @@
     background-attachment: fixed;
 }
 
+.white-bg{
+    background-color: white;
+    color: #0A1128;
+}
+
 .main-content{
     max-width: 120rem;
     margin: 0 auto;

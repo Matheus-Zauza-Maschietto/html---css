@@ -6,6 +6,7 @@
     right: 0;
     width: 100%;
     border-bottom: 0.2rem solid #EEEEEE;
+    z-index: 1;
 }
 
 .menu-content{
