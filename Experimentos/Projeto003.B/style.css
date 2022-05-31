@@ -17,6 +17,12 @@
 body{
     background-color: rgba(128, 128, 128, 0.445);
 }
+ul{
+    z-index: 2;
+}
+img{
+    z-index: 1;
+}
 @media (min-width: 300px) and (max-width: 500px){
     #checkbox{
         all: unset;
