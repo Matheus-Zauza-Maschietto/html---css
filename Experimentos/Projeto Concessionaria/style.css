@@ -13,6 +13,11 @@
     padding: 0;
     margin: 0;
     font-family: sans-serif;
+    
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 header{
@@ -20,7 +25,7 @@ header{
     left: 0;
     position: fixed;
     width: 100vw;
-    background-color: rgba(245, 242, 242, 0.329);
+    background-color: rgb(255, 255, 255);
     border-bottom: 2px solid black;
     z-index: 1;
 }
@@ -28,30 +33,92 @@ header{
 nav{
     max-width: 1200px;
     margin: auto;
+}   
+
+nav ul{
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     align-items: center;
     justify-content: space-evenly;
-}   
+}
 
 .menu-item{
     padding: 30px 40px;
+    list-style: none;
     
 }
 
-.menu-itens li a{
+.menu-item a{
     font-size: 1.2rem;
     color: black;
     text-decoration: none;
+    position: relative;
+}
+
+.menu-item a::after{
+    content: ' ';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 0.1rem;
+    background: crimson;
+    transition: all 300ms ease-in-out;
+}
+
+.menu-item a:hover::after{
+    width: 100%;
+    left: 0%;
 }
 
 .spacing{
     height: 90px;
 }
 
-
 main{
-    height: 100vh;
 
+}
+
+.home{
+    min-height: 100vh;
+    background-color: var(--cor-1);
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    box-sizing: border-box;
+    padding: 0 30px;
+    
+}
+
+.home .img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.img img{
+    max-width: 100%;
+    height: auto;
+}
+
+.home .conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.estoque{
+    min-height: 100vh;
+}
+
+.sobre{
+    min-height: 100vh;
+    background-color: var(--cor-1);
+}
+
+.suporte{
+    min-height: 100vh;
 }
