@@ -1,13 +1,15 @@
 @charset "UTF-8";
 
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;600&display=swap');
 :root{
     --cor-1: #FF8383;
     --cor-2: #DE5E5E;
     --cor-3: #781C1C;
     --cor-4: #450A0A;
+    --cor-5: #024dad;
     --font-1: "Dancing Script";
+    --font-2: 'Comfortaa';
 }
 
 * {
@@ -27,7 +29,7 @@ header{
     position: fixed;
     width: 100vw;
     background-color: rgb(255, 255, 255);
-    border-bottom: 2px solid black;
+    border-bottom: 3px solid black;
     z-index: 1;
 }
 
@@ -77,15 +79,20 @@ nav ul{
     height: 90px;
 }
 
-.home{
-    min-height: 100vh;
-    background-color: var(--cor-1);
-    margin: 0 auto;
+.back-image{
     background-image: url(images/fotoHome.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
+}
+
+.home{
+    min-height: 100vh;
+    background-color: var(--cor-1);
+    margin: 0 auto;
+    background-image: url(images/fotoHome.jpg);
+    
 }
 
  .conteudo{
@@ -138,30 +145,229 @@ nav ul{
 
 .carro{
     border-radius: 5%;
-    
+    overflow: hidden;
+    margin: 30px 0 ;
+    position: relative;
 }
 
 .carro img{
-    width: 400px;
+    width: clamp(300px, 100%, 400px);
     height: 400px;
+    border-radius: 3%;
+    transition: 300ms all ease-in-out;
 }
+
+.carro .buy-car{
+    width: 200px;
+    height: auto;
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: 300ms all ease-in-out;
+    pointer-events: none;
+}
+
+.carro img:hover{
+    transform: translate(-3%, 3%) scale(1.2) rotate(3deg);
+    filter: brightness(0.5);
+}
+
+.carro img:hover+img{
+    opacity: 0.75;
+    z-index: 0;
+}
+
 
 .sobre{
     min-height: 100vh;
-    background-color: var(--cor-1);
+    background-color: var(--cor-3);
+    background-image: url(images/sobre.jpg);
+    background-position: right bottom;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    justify-content: space-around;
+    line-height: 50px;
 }
+
+.sobre h3{
+    font-size: 3rem;
+    font-family: var(--font-2), cursive;
+    color: white;
+    margin-top: 25%;
+    text-shadow: 4px 4px 10px black;
+    text-align: center;
+}
+
+.sobre p{
+    text-align: justify;
+    font-size: 1.5rem;
+    color: whitesmoke;
+    padding-top: 5%;
+    text-shadow: 2px 2px 5px black;
+}
+
+.historia{
+    max-width: 800px;
+    padding: 40px;
+}
+
+.objetivo{
+    max-width: 800px;
+    padding: 40px;
+}
+
 
 .cooperadores{
     min-height: 100vh;
+    padding: 7%;
+    display: grid;
+    grid-template-columns: 1fr;
+    text-align: center;
+}
+
+.cooperadores h2{
+    font-family: var(--font-2), cursive;
+    font-size: 3.5rem;
+    text-align: center;
+}
+
+.lema q{
+    font-size: 2rem;
+}
+
+.lema div{
+    padding: 40px;
+    color: var(--cor-4);
+}
+
+.pessoas{
+    margin: auto;
+    max-width: 1400px;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.pessoa{
+    padding: 60px 40px;
+    text-align: center;
+    color: var(--cor-4);
+    transition: 300ms all ease-in-out;
+}
+
+.pessoa h3, .pessoa h4{
+    padding: 20px 10px 10px 40px;
+}
+
+.pessoa h3{
+    font-size: 1.5rem;
+}
+
+.pessoa h4{
+    font-size: 1.3rem;
+}
+
+.pessoa img{
+    width: clamp(300px, 350px, 400px);
+    height: auto;  
+    border-radius: 50%;
+}
+
+.pessoa:hover{
+    transform: scale(1.1);
+    text-shadow: 0px 0px 1px var(--cor-3);
+}
+
+.pessoa:hover>img{
+    box-shadow: 0px 0px 5px var(--cor-4);
 }
 
 .contato{
     min-height: 100vh;
-    background-color: var(--cor-1);
+    background-image: url(images/contato.jpg);
+    background-attachment: scroll;
+    text-align: center;
+}
+
+.contato h2{
+    font-size: 3rem;
+    color: white;
+    padding: 10% 0 3% 0;
+}
+
+.contato form{
+    margin: auto;
+    max-width: 900px;
+    height: 100vh;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: start;
+    align-items: center;
+}
+
+.campo{
+    padding: 30px;
+}
+
+.campo label{
+    font-size: 1.4rem;
+    position: absolute;
+    color: white;
+    opacity: 0;
+    transition: 300ms all ease-in-out;
+}
+
+.campo input{
+    width: 430px;
+    height: auto;
+    border-radius: 2%;
+    outline: none;
+    font-size: 1.2rem;
+    padding: 5px;
+    border: none;
+}
+
+.campo textarea{
+    border-radius: 2%;
+    outline: none;
+    border: none;
+    font-size: 1.2rem;
+    
+}
+
+.campo:hover label, .campo:focus-within label{
+    transform: translate(0, -100%);
+    opacity: 1;
+}
+
+.campo:hover input, .campo:focus-within input, .campo:hover textarea, .campo:focus-within textarea{
+    border: 2px solid var(--cor-5);
+}
+
+form button{
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    transition: 200ms all ease-in-out;
+}
+
+form button:hover, form button:focus{
+    transform: scale(1.1);
 }
 
 .box-shadow{
     box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.301);
+}
+
+footer{
+    height: 15vh;
+    background: var(--cor-4);
 }
 
 
