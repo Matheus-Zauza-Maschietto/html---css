@@ -1,12 +1,13 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 
 :root{
-    --cor-1: #5B583D;
-    --cor-2: #837C41;
-    --cor-3: #D1BF23;
-    --cor-4: #F9DE00;
-
+    --cor-1: #FF8383;
+    --cor-2: #DE5E5E;
+    --cor-3: #781C1C;
+    --cor-4: #450A0A;
+    --font-1: "Dancing Script";
 }
 
 * {
@@ -76,42 +77,73 @@ nav ul{
     height: 90px;
 }
 
-main{
-
-}
-
 .home{
     min-height: 100vh;
     background-color: var(--cor-1);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
-    box-sizing: border-box;
-    padding: 0 30px;
+    margin: 0 auto;
+    background-image: url(images/fotoHome.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+ .conteudo{
+    max-width: 1000px;
+    margin: auto;
+    text-align: center;
+    color: white;
     
 }
 
-.home .img{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.conteudo>h1{
+    padding-top: 10%;
+    font-size: 5rem;
+    font-family: var(--font-1), cursive;
+    text-shadow: 4px 4px 10px black;
 }
 
-.img img{
-    max-width: 100%;
-    height: auto;
-}
-
-.home .conteudo{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
+.conteudo>p{
+    font-size: 2rem;
+    padding-top: 5vh;
+    text-shadow: 3px 3px 5px black;
+    text-transform: capitalize;
 }
 
 .estoque{
     min-height: 100vh;
+}
+
+.estoque .veiculos{
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width: 1350px;
+    margin: auto;
+}
+
+.veiculos h2{
+    font-family: var(--font-1), cursive;
+    font-size: 4.5rem;
+    color: var(--cor-4);
+    text-align: center;
+    padding-top: 10vh;
+}
+
+.veiculos > div{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.carro{
+    border-radius: 5%;
+    
+}
+
+.carro img{
+    width: 400px;
+    height: 400px;
 }
 
 .sobre{
@@ -119,6 +151,17 @@ main{
     background-color: var(--cor-1);
 }
 
-.suporte{
+.cooperadores{
     min-height: 100vh;
 }
+
+.contato{
+    min-height: 100vh;
+    background-color: var(--cor-1);
+}
+
+.box-shadow{
+    box-shadow: 3px 3px 15px rgba(0, 0, 0, 0.301);
+}
+
+
