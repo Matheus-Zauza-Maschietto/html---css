@@ -134,6 +134,7 @@ nav ul{
     color: var(--cor-4);
     text-align: center;
     padding-top: 10vh;
+    text-shadow: 0px 0px 4px var(--cor-4);
 }
 
 .veiculos > div{
@@ -292,6 +293,7 @@ nav ul{
     background-image: url(images/contato.jpg);
     background-attachment: scroll;
     text-align: center;
+    border-bottom: 2px solid black;
 }
 
 .contato h2{
@@ -346,7 +348,8 @@ nav ul{
 }
 
 .campo:hover input, .campo:focus-within input, .campo:hover textarea, .campo:focus-within textarea{
-    border: 2px solid var(--cor-5);
+    border-bottom: 2px solid var(--cor-5);
+    border-left: 2px solid var(--cor-5);
 }
 
 form button{
@@ -366,8 +369,19 @@ form button:hover, form button:focus{
 }
 
 footer{
-    height: 15vh;
+    height: clamp(10vh, 100%, 15vh);
     background: var(--cor-4);
+    display: flex;
+    flex-flow: row wrap;
 }
 
+.social-media{
+    padding: 2%;
+}
+
+.social-media img{
+    height: 8vh;
+    width: auto;
+    
+}
 
