@@ -228,21 +228,13 @@ nav ul{
     display: grid;
     grid-template-columns: 1fr;
     text-align: center;
+    align-content: space-around;
 }
 
 .cooperadores h2{
     font-family: var(--font-2), cursive;
     font-size: 3.5rem;
     text-align: center;
-}
-
-.lema q{
-    font-size: 2rem;
-}
-
-.lema div{
-    padding: 40px;
-    color: var(--cor-4);
 }
 
 .pessoas{
@@ -369,10 +361,17 @@ form button:hover, form button:focus{
 }
 
 footer{
-    height: clamp(10vh, 100%, 15vh);
+    height: clamp(15vh, 100%, 20vh);
     background: var(--cor-4);
     display: flex;
     flex-flow: row wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social{
+    display: flex;
+    flex-flow: norow wrap;
 }
 
 .social-media{
@@ -385,3 +384,12 @@ footer{
     
 }
 
+.anotation{
+    padding-right: 20px;
+}
+
+.anotation a{
+    text-decoration: none;
+    color: white;
+
+}
