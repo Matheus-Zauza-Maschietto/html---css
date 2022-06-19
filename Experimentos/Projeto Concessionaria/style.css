@@ -165,8 +165,8 @@ nav ul{
 }
 
 .carro img{
-    width: clamp(300px, 100%, 400px);
-    height: 400px;
+    width: clamp(200px, 100%, 400px);
+    height: auto;
     border-radius: 3%;
     transition: 300ms all ease-in-out;
 }
@@ -437,11 +437,12 @@ footer{
         background-color: white;
         width: 100vw;
         height: 100vh;
+        transition: 300ms all ease-in-out;
         
     }
 
     nav input:not(:checked)+ul{
-        top: -100%;
+        top: -110%;
     }
     
     .pessoa{
@@ -458,5 +459,20 @@ footer{
 
     .pessoa h3{
         padding: 10px 0 ;
+    }
+
+    .spacing{
+        height: 0;
+    }
+    .carro{
+
+    }
+    .objetivo{
+        padding: 40px 10px;
+        
+    }
+    .historia{
+        padding: 40px 10px;
+
     }
 }
