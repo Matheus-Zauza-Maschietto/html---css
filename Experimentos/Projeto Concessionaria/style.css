@@ -39,6 +39,7 @@ nav{
 }
 
 nav input{
+    all: unset;
     visibility: hidden;
     width: 40px;
     height: 40px;
@@ -47,6 +48,7 @@ nav input{
     top: 0px;
     left: 0;
     z-index: 2;
+    background-image: url(images/icons/menu-icon.svg);
 }
 
 nav ul{
@@ -245,6 +247,7 @@ nav ul{
     font-family: var(--font-2), cursive;
     font-size: 3.5rem;
     text-align: center;
+    padding: 10px 0 30px 0;
 }
 
 .pessoas{
@@ -445,7 +448,15 @@ footer{
         padding: 0;
     }
 
-    .pessoa h3, .pessoa h4{
+    .cooperadores{
+        padding: 0;
+    }
+
+    .pessoa h4{
         padding: 20px 0 40px 0;
+    }
+
+    .pessoa h3{
+        padding: 10px 0 ;
     }
 }
